@@ -1,0 +1,69 @@
+:root {
+    --bg-primary: rgb(4, 137, 4);
+    --bg-secundary: orange;
+    --color-primary: #fff
+}
+
+/*HEADER*/
+.container-header {
+    width: 100%;
+    position: fixed;
+}
+
+header {
+    width: 100%;
+    background: var(--bg-primary);
+    color: var(--color-primary);
+    padding: 2em 0em;
+}
+
+.navbar-desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ul-desktop {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+.ul-desktop a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.ul-mobile {
+    display: none;
+    background-color: var(--bg-primary);
+    text-align: center;
+}
+
+.ul-mobile a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ul-mobile {
+        display: block;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    .ul-desktop {
+        display: none;
+    }
+}
